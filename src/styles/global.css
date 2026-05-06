@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* ============================================
+   Tailwind v4 theme (only tokens consumed by
+   Tailwind utilities — keeps tree-shaking happy)
+   ============================================ */
+@theme {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+/* ============================================
+   Design Tokens — plain CSS custom properties
+   (consumed directly in SCSS / component styles,
+    not via Tailwind utilities, so they live in
+    :root to avoid @theme tree-shaking)
+   ============================================ */
+:root {
+  /* Colors */
+  --color-bg: #0a0a0f;
+  --color-bg-elevated: #12121a;
+  --color-bg-card: #16161f;
+  --color-bg-hover: #1c1c28;
+
+  --color-border: #2a2a3a;
+  --color-border-subtle: #1f1f2e;
+
+  --color-text-primary: #f0f0f5;
+  --color-text-secondary: #a0a0b0;
+  --color-text-muted: #606070;
+
+  --color-accent: #6366f1;
+  --color-accent-light: #818cf8;
+  --color-accent-dark: #4f46e5;
+
+  --color-gradient-start: #6366f1;
+  --color-gradient-mid: #8b5cf6;
+  --color-gradient-end: #a855f7;
+
+  --color-success: #22c55e;
+  --color-warning: #eab308;
+  --color-error: #ef4444;
+
+  /* Typography */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* Border radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.15);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+}
