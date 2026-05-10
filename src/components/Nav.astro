@@ -2,6 +2,7 @@
 const currentPath = Astro.url.pathname;
 
 const links = [
+  { href: '/#about', label: 'About' },
   { href: '/#projects', label: 'Projects' },
   { href: '/#skills', label: 'Skills' },
   { href: '/#contact', label: 'Contact' },
@@ -11,8 +12,13 @@ const links = [
 <nav class="nav">
   <div class="nav-container">
     <a href="/" class="nav-logo">
-      <span class="logo-icon">⎈</span>
-      <span class="logo-text">Shicheng (Aiden) Lin 林士城</span>
+      <span class="logo-icon" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 17l5-9 4 6 3-4 4 7"/>
+          <circle cx="9" cy="8" r="1.5" fill="currentColor"/>
+        </svg>
+      </span>
+      <span class="logo-text">Aiden Shi Cheng Lin · 林士城</span>
     </a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span>
@@ -39,14 +45,26 @@ const links = [
     right: 0;
     z-index: 100;
     padding: var(--space-4) 0;
-    background: rgba(10, 10, 15, 0.8);
+    background: rgba(246, 250, 245, 0.82);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--color-border-subtle);
     transition: background var(--transition-base);
   }
 
+  .logo-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--radius-md);
+    background: var(--color-accent-soft);
+    color: var(--color-accent-dark);
+  }
+
   .nav-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 var(--space-6);
     display: flex;
@@ -60,10 +78,6 @@ const links = [
     gap: var(--space-2);
     font-weight: 600;
     font-size: var(--text-lg);
-  }
-
-  .logo-icon {
-    font-size: var(--text-xl);
   }
 
   .nav-links {
@@ -123,8 +137,9 @@ const links = [
       left: 0;
       right: 0;
       flex-direction: column;
-      background: rgba(10, 10, 15, 0.95);
+      background: rgba(246, 250, 245, 0.96);
       backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
       padding: var(--space-4) var(--space-6);
       gap: var(--space-4);
       border-bottom: 1px solid var(--color-border-subtle);
@@ -146,8 +161,8 @@ const links = [
     if (nav) {
       nav.style.background =
         window.pageYOffset > 100
-          ? 'rgba(10, 10, 15, 0.95)'
-          : 'rgba(10, 10, 15, 0.8)';
+          ? 'rgba(246, 250, 245, 0.96)'
+          : 'rgba(246, 250, 245, 0.82)';
     }
   });
 

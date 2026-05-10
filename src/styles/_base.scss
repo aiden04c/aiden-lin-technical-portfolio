@@ -59,13 +59,14 @@ section {
 .section-tag {
   display: inline-block;
   padding: var(--space-1) var(--space-4);
-  background: rgba(99, 102, 241, 0.1);
-  border: 1px solid rgba(99, 102, 241, 0.2);
+  background: var(--color-accent-soft);
+  border: 1px solid rgba(var(--accent-rgb), 0.25);
   border-radius: var(--radius-full);
   font-size: var(--text-sm);
-  color: var(--color-accent-light);
-  font-weight: 500;
+  color: var(--color-accent-dark);
+  font-weight: 600;
   margin-bottom: var(--space-4);
+  letter-spacing: 0.02em;
 }
 
 .section-title {
@@ -101,32 +102,36 @@ section {
 .btn-primary {
   background: var(--color-accent);
   color: white;
+  font-weight: 600;
 
   &:hover {
     background: var(--color-accent-dark);
     transform: translateY(-2px);
-    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 8px 24px rgba(var(--accent-rgb), 0.32);
   }
 }
 
 .btn-secondary {
-  background: transparent;
-  color: var(--color-text-secondary);
+  background: var(--color-bg-card);
+  color: var(--color-text-primary);
   border: 1px solid var(--color-border);
+  font-weight: 600;
 
   &:hover {
     border-color: var(--color-accent);
-    color: var(--color-text-primary);
+    color: var(--color-accent-dark);
+    background: var(--color-accent-soft);
   }
 }
 
 /* ============================================
-   Code Blocks (shared)
+   Code Blocks (shared) — green-tinted on dark card
    ============================================ */
-.code-key { color: #7dd3fc; }
-.code-string { color: #a5d6ff; }
-.code-bool { color: #ff7b72; }
-.code-num { color: #ffa657; }
-.code-var { color: #d2a8ff; }
-.code-comment { color: #8b949e; }
-.code-dim { color: #484f58; }
+.code-key { color: #86efac; }
+.code-string { color: #bbf7d0; }
+.code-bool { color: #fca5a5; }
+.code-num { color: #fcd34d; }
+.code-var { color: #c4b5fd; }
+.code-comment { color: #94a3b8; font-style: italic; }
+.code-dim { color: #475569; }
+.code-arrow { color: #4ade80; font-weight: 700; }

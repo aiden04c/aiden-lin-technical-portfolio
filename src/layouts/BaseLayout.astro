@@ -8,7 +8,7 @@ interface Props {
   description?: string;
 }
 
-const { title, description = 'Technical Portfolio' } = Astro.props;
+const { title, description = 'Aiden Lin — client-facing project lead with hands-on Cloudflare delivery experience.' } = Astro.props;
 ---
 
 <!doctype html>
@@ -16,7 +16,11 @@ const { title, description = 'Technical Portfolio' } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title} | Shicheng (Aiden) Lin 林士城</title>
+    <title>{title} | Aiden Lin · 林士城</title>
+    <meta name="theme-color" content="#16a34a" />
+    <meta property="og:title" content={`${title} | Aiden Lin`} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
     <meta name="description" content={description} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

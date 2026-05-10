@@ -10,36 +10,40 @@
 }
 
 /* ============================================
-   Design Tokens — plain CSS custom properties
-   (consumed directly in SCSS / component styles,
-    not via Tailwind utilities, so they live in
-    :root to avoid @theme tree-shaking)
+   Design Tokens — Light Green theme
    ============================================ */
 :root {
-  /* Colors */
-  --color-bg: #0a0a0f;
-  --color-bg-elevated: #12121a;
-  --color-bg-card: #16161f;
-  --color-bg-hover: #1c1c28;
+  /* Surfaces */
+  --color-bg: #f6faf5;
+  --color-bg-elevated: #eef5ec;
+  --color-bg-card: #ffffff;
+  --color-bg-hover: #e6efe2;
 
-  --color-border: #2a2a3a;
-  --color-border-subtle: #1f1f2e;
+  --color-border: #cfe0c9;
+  --color-border-subtle: #e3ede0;
 
-  --color-text-primary: #f0f0f5;
-  --color-text-secondary: #a0a0b0;
-  --color-text-muted: #606070;
+  /* Text */
+  --color-text-primary: #1a2c1f;
+  --color-text-secondary: #4d5d50;
+  --color-text-muted: #7a8a7e;
 
-  --color-accent: #6366f1;
-  --color-accent-light: #818cf8;
-  --color-accent-dark: #4f46e5;
+  /* Accent — light green family */
+  --color-accent: #16a34a;
+  --color-accent-light: #4ade80;
+  --color-accent-dark: #15803d;
+  --color-accent-soft: #dcfce7;
 
-  --color-gradient-start: #6366f1;
-  --color-gradient-mid: #8b5cf6;
-  --color-gradient-end: #a855f7;
+  --color-gradient-start: #4ade80;
+  --color-gradient-mid: #22c55e;
+  --color-gradient-end: #047857;
 
-  --color-success: #22c55e;
-  --color-warning: #eab308;
-  --color-error: #ef4444;
+  --color-success: #16a34a;
+  --color-warning: #d97706;
+  --color-error: #dc2626;
+
+  /* Translucent accent helpers */
+  --accent-rgb: 22, 163, 74;
+  --accent-light-rgb: 74, 222, 128;
 
   /* Typography */
   --text-xs: 0.75rem;
@@ -74,11 +78,11 @@
   --radius-2xl: 1.5rem;
   --radius-full: 9999px;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 40px rgba(99, 102, 241, 0.15);
+  /* Shadows — softer for light theme */
+  --shadow-sm: 0 1px 2px rgba(26, 44, 31, 0.06);
+  --shadow-md: 0 4px 12px rgba(26, 44, 31, 0.08);
+  --shadow-lg: 0 16px 40px rgba(26, 44, 31, 0.10);
+  --shadow-glow: 0 0 60px rgba(74, 222, 128, 0.20);
 
   /* Transitions */
   --transition-fast: 150ms ease;

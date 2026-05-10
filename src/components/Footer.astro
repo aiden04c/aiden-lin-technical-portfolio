@@ -3,19 +3,44 @@
 
 <footer class="footer">
   <div class="container">
-    <p>&copy; {new Date().getFullYear()} Aiden Shicheng Lin.</p>
+    <div class="footer-row">
+      <p class="footer-copy">&copy; {new Date().getFullYear()} Aiden Shi Cheng Lin · 林士城</p>
+      <p class="footer-tag">Built &amp; deployed on Cloudflare · Singapore</p>
+    </div>
   </div>
 </footer>
 
 <style lang="scss">
   .footer {
     padding: var(--space-8) 0;
-    text-align: center;
     border-top: 1px solid var(--color-border-subtle);
+    background: var(--color-bg-elevated);
+  }
 
-    p {
-      font-size: var(--text-sm);
-      color: var(--color-text-muted);
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .footer-copy,
+  .footer-tag {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .footer-tag {
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+  }
+
+  @media (max-width: 600px) {
+    .footer-row {
+      flex-direction: column;
+      text-align: center;
     }
   }
 </style>
