@@ -912,8 +912,26 @@
 }
 
 @media (max-width: 768px) {
+  section {
+    padding: var(--space-16) 0;
+  }
+
+  .hero {
+    padding: var(--space-16) var(--space-4) var(--space-12);
+  }
+
   .hero-title {
     font-size: 2.4rem;
+  }
+
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  .stat {
+    max-width: none;
   }
 
   .arch-diagram {
@@ -925,8 +943,41 @@
     transform: rotate(90deg);
   }
 
+  .solution-steps {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .solution-step-arrow {
+    transform: rotate(90deg);
+    align-self: flex-start;
+    margin-left: calc(var(--space-3) + 11px);
+  }
+
+  .solution-step {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .project-card {
+    padding: var(--space-4);
+  }
+
+  .project-features {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .feature {
+    min-width: unset;
+  }
+
   .skills-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skill-category {
+    padding: var(--space-4);
   }
 
   .contact-links {
@@ -937,8 +988,64 @@
   .product-row {
     flex-wrap: wrap;
   }
+}
 
-  .stat {
-    max-width: none;
+@media (max-width: 480px) {
+  section {
+    padding: var(--space-12) 0;
+  }
+
+  .hero {
+    padding: var(--space-12) var(--space-4) var(--space-10);
+  }
+
+  .hero-title {
+    font-size: 1.9rem;
+  }
+
+  .hero-description {
+    font-size: var(--text-base);
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+  }
+
+  .stat-value {
+    font-size: var(--text-2xl);
+  }
+
+  .section-title {
+    font-size: var(--text-3xl);
+  }
+
+  .section-description {
+    font-size: var(--text-base);
+  }
+
+  .project-title {
+    font-size: var(--text-xl);
+  }
+
+  .snapshot-body {
+    padding: var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .snapshot-products {
+    padding: var(--space-2);
+  }
+
+  .product-name {
+    font-size: var(--text-xs);
+  }
+
+  .project-description {
+    font-size: var(--text-sm);
+  }
+
+  .highlight {
+    padding: var(--space-4);
   }
 }
