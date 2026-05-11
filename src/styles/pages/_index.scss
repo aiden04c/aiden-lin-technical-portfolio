@@ -853,6 +853,59 @@
   font-size: var(--text-lg);
 }
 
+/* Card expand accordion */
+.card-expand-body {
+  // Desktop: always visible — no restrictions
+}
+
+.card-expand-toggle {
+  display: none; // hidden on desktop
+}
+
+@media (max-width: 768px) {
+  .card-expand-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+
+  .card-expand.is-open .card-expand-body {
+    max-height: 2000px;
+    opacity: 1;
+    transition: max-height 0.5s ease, opacity 0.35s ease 0.05s;
+  }
+
+  .card-expand-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    margin-top: var(--space-3);
+    padding: var(--space-2) var(--space-4);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--color-accent-dark);
+    background: var(--color-accent-soft);
+    border: 1px solid rgba(var(--accent-rgb), 0.3);
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: background var(--transition-fast), color var(--transition-fast);
+
+    &:hover {
+      background: rgba(var(--accent-rgb), 0.18);
+    }
+  }
+
+  .expand-icon {
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .card-expand.is-open .expand-icon {
+    transform: rotate(180deg);
+  }
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .hero {

@@ -145,12 +145,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <p>
             I've spent the last two years running client-facing project work across Singapore, Hong Kong and the UK — translating client objectives into structured plans and delivering measurable outcomes. At Knight Frank I lead workplace consulting and fit-out engagements; at HKePark I'm the commercial / build half of an NUS × HKUST team pitching a smart curb-billing prototype to the Hong Kong government.
           </p>
-          <p>
-            I'm a data-driven communicator: I synthesise messy datasets — site usage, work-order volume, vendor quotes, conversion data — into recommendations that have informed pricing, procurement and growth decisions for senior stakeholders. I'm Google Ads Measurement Certified®, so I'm also fluent in conversion tracking, GA4↔Google Ads attribution, incrementality, MMM and audience-signal conversations.
-          </p>
-          <p>
-            I'm new to tech, but not afraid of it. I've taught myself enough of Cloudflare's developer platform — <strong>Workers, Pages, KV, R2, DNS and Load Balancing</strong> — to ship two live products on my own. That hands-on shipping experience is what I bring into Solutions Engineer / Account Manager rooms: I can stand next to an engineer at a whiteboard <em>and</em> next to a buyer in a boardroom, and keep both moving toward signature.
-          </p>
+          <div class="card-expand">
+            <div class="card-expand-body">
+              <p>
+                I'm a data-driven communicator: I synthesise messy datasets — site usage, work-order volume, vendor quotes, conversion data — into recommendations that have informed pricing, procurement and growth decisions for senior stakeholders. I'm Google Ads Measurement Certified®, so I'm also fluent in conversion tracking, GA4↔Google Ads attribution, incrementality, MMM and audience-signal conversations.
+              </p>
+              <p>
+                I'm new to tech, but not afraid of it. I've taught myself enough of Cloudflare's developer platform — <strong>Workers, Pages, KV, R2, DNS and Load Balancing</strong> — to ship two live products on my own. That hands-on shipping experience is what I bring into Solutions Engineer / Account Manager rooms: I can stand next to an engineer at a whiteboard <em>and</em> next to a buyer in a boardroom, and keep both moving toward signature.
+              </p>
+            </div>
+            <button class="card-expand-toggle" aria-expanded="false">
+              <span class="expand-label">Read more</span>
+              <svg class="expand-icon" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
           <div class="about-highlights">
             {[
               { icon: '🤝', title: 'Multi-stakeholder translation', desc: 'Three years of running rooms full of clients, consultants, contractors, government partners and academic teams. RAID logs, status reports, change-order packs, senior-stakeholder updates — I keep narratives consistent across audiences and turn ambiguity into a decision-ready brief.' },
@@ -204,12 +214,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <p class="project-description">
             HKePark is a usage-based curbside parking system that bills drivers by the minute via the existing HKeToll app — no coins, no tickets, no wardens. Hong Kong's parking supply grew 9% over a decade while vehicles rose 36%; the prototype is being pitched to the HKSAR Transport Department, backed by the Hong Kong Productivity Council and the Smart Traffic Fund. A joint NUS × HKUST initiative.
           </p>
-          <p class="project-description">
-            <strong>My role:</strong> co-authored the funding proposal aligning technical, commercial and public-sector stakeholders into a single go-to-market case; built cost models and supplier comparisons for proof-of-concept hardware across Mainland China and APAC; and shipped the bilingual marketing site on Cloudflare — the digital centrepiece of the government pitch, designed to build institutional trust and educate stakeholders on the system.
-          </p>
-          <p class="project-description">
-            <strong>Growth strategy:</strong> the site is built to scale into a full public-awareness campaign — Google Search &amp; Display Ads targeting Hong Kong commuters, YouTube pre-rolls explaining the system, and retargeting flows to drive HKeToll app adoption once the pilot launches. The goal: turn a government-approval pitch asset into a demand-generation engine for public uptake.
-          </p>
+          <div class="card-expand">
+            <div class="card-expand-body">
+              <p class="project-description">
+                <strong>My role:</strong> co-authored the funding proposal aligning technical, commercial and public-sector stakeholders into a single go-to-market case; built cost models and supplier comparisons for proof-of-concept hardware across Mainland China and APAC; and shipped the bilingual marketing site on Cloudflare — the digital centrepiece of the government pitch, designed to build institutional trust and educate stakeholders on the system.
+              </p>
+              <p class="project-description">
+                <strong>Growth strategy:</strong> the site is built to scale into a full public-awareness campaign — Google Search &amp; Display Ads targeting Hong Kong commuters, YouTube pre-rolls explaining the system, and retargeting flows to drive HKeToll app adoption once the pilot launches. The goal: turn a government-approval pitch asset into a demand-generation engine for public uptake.
+              </p>
+            </div>
+            <button class="card-expand-toggle" aria-expanded="false">
+              <span class="expand-label">Read more</span>
+              <svg class="expand-icon" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
           <div class="project-features">
             <div class="feature"><span class="feature-label">Live at</span><span class="feature-value"><a href="https://hkepark.com" target="_blank" rel="noopener">hkepark.com</a></span></div>
             <div class="feature"><span class="feature-label">My role</span><span class="feature-value">Proposal · Cost modelling · Cloudflare delivery · Growth strategy</span></div>
@@ -284,9 +304,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <p class="project-description">
             A Mainland China auto-parts supplier running entirely on domestic social platforms — WeChat Store, Douyin product posts, Xiaohongshu brand pages — with zero international web presence and no way for overseas buyers to validate the brand. I acted as advisor, solution architect, and delivery lead: scoped the requirement, designed the content strategy and site architecture, built and deployed on Cloudflare, and handed over an analytics-instrumented platform ready to grow.
           </p>
-          <p class="project-description">
-            <strong>Growth strategy:</strong> consolidate domestic reach via Baidu Search Ads and WeChat Official Account campaigns for brand authority within China; then expand into SEA and global markets via Google Search &amp; Shopping Ads targeting automotive distributors and B2B buyers in Singapore, Malaysia, and wider APAC. The international storefront becomes the conversion destination across all channels — a single credible URL the sales team can share with any buyer, anywhere.
-          </p>
+          <div class="card-expand">
+            <div class="card-expand-body">
+              <p class="project-description">
+                <strong>Growth strategy:</strong> consolidate domestic reach via Baidu Search Ads and WeChat Official Account campaigns for brand authority within China; then expand into SEA and global markets via Google Search &amp; Shopping Ads targeting automotive distributors and B2B buyers in Singapore, Malaysia, and wider APAC. The international storefront becomes the conversion destination across all channels — a single credible URL the sales team can share with any buyer, anywhere.
+              </p>
+            </div>
+            <button class="card-expand-toggle" aria-expanded="false">
+              <span class="expand-label">Read more</span>
+              <svg class="expand-icon" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
           <div class="project-features">
             <div class="feature"><span class="feature-label">Live at</span><span class="feature-value"><a href="https://chentian.aiden04c.workers.dev" target="_blank" rel="noopener">chentian.aiden04c.workers.dev</a></span></div>
             <div class="feature"><span class="feature-label">My role</span><span class="feature-value">Advisor · Solution Design · Full-stack Delivery · Growth Strategy</span></div>
@@ -315,9 +345,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <p class="project-description">
             Acted as the client-facing account lead on workplace consulting and fit-out engagements across Singapore. Ran discovery sessions, translated site-usage data into right-sizing and adjacency recommendations, and built the commercial case that moved clients from brief to signature. Won 5 projects worth S$3–6M each — each win driven by a tailored proposal that positioned cost/risk trade-offs and a master programme clients could defend to their own boards.
           </p>
-          <p class="project-description">
-            <strong>Post-award delivery:</strong> Oversaw cash flow and delivery schedule on two S$4M projects, coordinating 20+ change requests across clients, consultants and contractors. Drove 13–15% post-handover cost reduction through strategic value engineering: challenging scope assumptions, running competitive vendor re-tenders, and reconciling final accounts — savings that directly improved client ROI and strengthened the relationship for follow-on work.
-          </p>
+          <div class="card-expand">
+            <div class="card-expand-body">
+              <p class="project-description">
+                <strong>Post-award delivery:</strong> Oversaw cash flow and delivery schedule on two S$4M projects, coordinating 20+ change requests across clients, consultants and contractors. Drove 13–15% post-handover cost reduction through strategic value engineering: challenging scope assumptions, running competitive vendor re-tenders, and reconciling final accounts — savings that directly improved client ROI and strengthened the relationship for follow-on work.
+              </p>
+            </div>
+            <button class="card-expand-toggle" aria-expanded="false">
+              <span class="expand-label">Read more</span>
+              <svg class="expand-icon" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
           <div class="project-features">
             <div class="feature"><span class="feature-label">Deal outcome</span><span class="feature-value">5 wins · S$20M+ portfolio · avg S$3–6M per deal</span></div>
             <div class="feature"><span class="feature-label">Cost outcome</span><span class="feature-value">13–15% reduction via value engineering &amp; negotiation</span></div>
@@ -348,9 +388,19 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <p class="project-description">
             Residential property management at Reflections @ Keppel Bay, where I served as the day-to-day interface between the service-delivery teams and the client property owner — translating messy operational data into clear business terms the client could understand and act on. Introduced digital KPI and work-order dashboards that gave both internal teams and the client a single, real-time view of operational performance, replacing fragmented email updates with a shared source of truth.
           </p>
-          <p class="project-description">
-            <strong>Pipeline & outcomes:</strong> Built a resident request-intake pipeline that structured inbound feedback into actionable work orders — improving response consistency and resident satisfaction scores. This is the case study I reach for when a hiring manager asks: <em>"How do you bridge the gap between a technical team and a non-technical client?"</em>
-          </p>
+          <div class="card-expand">
+            <div class="card-expand-body">
+              <p class="project-description">
+                <strong>Pipeline & outcomes:</strong> Built a resident request-intake pipeline that structured inbound feedback into actionable work orders — improving response consistency and resident satisfaction scores. This is the case study I reach for when a hiring manager asks: <em>"How do you bridge the gap between a technical team and a non-technical client?"</em>
+              </p>
+            </div>
+            <button class="card-expand-toggle" aria-expanded="false">
+              <span class="expand-label">Read more</span>
+              <svg class="expand-icon" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 5l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
           <div class="project-features">
             <div class="feature"><span class="feature-label">AM parallel</span><span class="feature-value">Client owner ↔ Ops team — translating needs in both directions</span></div>
             <div class="feature"><span class="feature-label">Skills shown</span><span class="feature-value">Client reporting · Stakeholder alignment · Data → decisions</span></div>
@@ -474,6 +524,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   document.querySelectorAll('.skill-item').forEach((item) => {
     item.addEventListener('mouseenter', () => { (item as HTMLElement).style.transform = 'scale(1.04)'; });
     item.addEventListener('mouseleave', () => { (item as HTMLElement).style.transform = 'scale(1)'; });
+  });
+
+  // Accordion — mobile only (CSS hides toggle on desktop)
+  document.querySelectorAll('.card-expand-toggle').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const expand = btn.closest('.card-expand') as HTMLElement;
+      const isOpen = expand.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', String(isOpen));
+      const label = btn.querySelector('.expand-label');
+      if (label) label.textContent = isOpen ? 'Show less' : 'Read more';
+    });
   });
 
   // Parallax glow
