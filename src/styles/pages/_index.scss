@@ -419,6 +419,10 @@
 /* About */
 .about {
   background: var(--color-bg-elevated);
+
+  .section-header {
+    margin-bottom: var(--space-6);
+  }
 }
 
 .section-title {
