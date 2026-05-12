@@ -885,7 +885,7 @@
     align-items: center;
     gap: var(--space-2);
     margin-top: var(--space-3);
-    padding: var(--space-2) var(--space-4);
+    padding: var(--space-3) var(--space-4);
     font-size: var(--text-sm);
     font-weight: 600;
     color: var(--color-accent-dark);
@@ -921,6 +921,9 @@
   .hero-badge {
     grid-column: 1;
     justify-self: center;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
   }
 
   .hero-description {
@@ -949,10 +952,6 @@
 
   .snapshot-card {
     transform: none;
-  }
-
-  .about-highlights {
-    grid-template-columns: 1fr;
   }
 
   .projects-grid {
@@ -1029,10 +1028,6 @@
     min-width: unset;
   }
 
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
   .skill-category {
     padding: var(--space-4);
   }
@@ -1044,6 +1039,16 @@
 
   .product-row {
     flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
   }
 }
 
